@@ -279,7 +279,9 @@ ClearGrassAirMonitor.prototype = {
             callback(new Error('No AirQuality Sensor is discovered.'));
             return;
         }
-
+        if (this.pm25 > 1000) {
+            this.pm25 = 1000;
+        }
         this.log.debug('getPM25: %s', this.pm25);
 
         callback(null, this.pm25);
@@ -288,6 +290,9 @@ ClearGrassAirMonitor.prototype = {
         if (!this.device) {
             callback(new Error('No AirQuality Sensor is discovered.'));
             return;
+        }
+        if (this.tvoc > 1000) {
+            this.tvoc = 1000;
         }
 
         this.log.debug('getTvoc: %s', this.tvoc);
