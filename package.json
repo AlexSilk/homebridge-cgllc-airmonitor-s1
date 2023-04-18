@@ -1,8 +1,8 @@
 {
-	"name": "homebridge-cgllc-airmonitor-s1",
-	"version": "0.0.13",
+	"name": "homebridge-cgllc-airmonitor-alexsilk",
+	"version": "0.0.14",
 	"description": "Xiaomi Clear Grass(S1) plugin for Homebridge.",
-	"author": "Steve Kim <smallwood69@gmail.com>",
+	"author": "Aleksey Borisov <lx.silk@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
 	"keywords": [
@@ -15,10 +15,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/smallwood69/homebridge-cgllc-airmonitor-s1"
+		"url": "https://github.com/AlexSilk/homebridge-cgllc-airmonitor-s1"
 	},
   "bugs": {
-    "url": "https://github.com/smallwood69/homebridge-cgllc-airmonitor-s1/issues"
+    "url": "https://github.com/AlexSilk/homebridge-cgllc-airmonitor-s1/issues"
   },
 	"engines": {
 		"node": ">=0.12.0",
