@@ -178,8 +178,8 @@ ClearGrassAirMonitor.prototype = {
 	    that.device.call("get_prop", ["co2","pm25","tvoc","temperature","humidity"]).then(result => {
 		    that.co2 = result['co2'];
 		    that.humidity = result['humidity'];
-		    that.pm25 = result['pm25'];
-		    that.tvoc = result['tvoc'];
+		    that.pm25 = result['pm25'] <= 1000 ? result['pm25'] : 1000;
+		    that.tvoc = result['tvoc'] <= 1000 ? result['tvoc'] : 1000;
 		    that.temperature = result['temperature'];
 //            log.debug('result :  %s', JSON.stringify(result));
 //            log.debug('tvoc :  %s', that.tvoc);
